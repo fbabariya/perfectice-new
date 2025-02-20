@@ -1,0 +1,87 @@
+:root {
+    --primary-color: #0A1929;
+    --secondary-color: #E7EAEC;
+    --background-color: #FFFFFF;
+    --gradient-start: #35C47B;
+    --gradient-end: #3DA2F8;
+    --button-primary: #007BFF;
+    --button-secondary: #0056b3;
+    --tag-bg: #EFF3FB;
+    --border-radius: 16px;
+    --box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.06);
+}
+/* Ensure global reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif !important;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+}
+
+/* Navbar */
+.navbar {
+    height: 64px !important;
+    background-color: var(--background-color) !important;
+    box-shadow: var(--box-shadow);
+}
+
+/* Brand Logo */
+.navbar .logo {
+    /* height: 35px !important; */
+    width: 175px !important;
+    height: 29.615385055541992px !important;
+
+}
+
+/* Icons */
+.navbar .icon {
+    font-size: 20px !important;
+    cursor: pointer;
+    
+}
+
+/* Profile Image */
+.navbar .profile-img {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 50% !important;
+}
+
+/* User Info */
+.navbar .user-name {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+
+.navbar .user-role {
+    font-size: 12px !important;
+    color: gray !important;
+}
+
+/* Dropdown Icon */
+.navbar .dropdown-icon {
+    font-size: 16px !important;
+    cursor: pointer;
+}
+
+/* navbar css ends*/
+
+h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0;
+}
+
+.ParagraphsBody {
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 85%;
+}
