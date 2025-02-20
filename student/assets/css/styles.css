@@ -25,63 +25,108 @@ body {
     background-color: var(--background-color);
 }
 
-/* Navbar */
+
+/* Navbar start*/
 .navbar {
     height: 64px !important;
     background-color: var(--background-color) !important;
     box-shadow: var(--box-shadow);
 }
-
-/* Brand Logo */
 .navbar .logo {
     /* height: 35px !important; */
     width: 175px !important;
     height: 29.615385055541992px !important;
-
 }
-
-/* Icons */
-.navbar .icon {
-    font-size: 20px !important;
-    cursor: pointer;
-    
+/* Icon Box for Bordered Icons */
+.icon-box {
+    width: 36px; /* Set fixed width */
+    height: 36px; /* Set fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--secondary-color); /* Light gray border */
+    background-color: var(--background-color); /* White background */
+    box-shadow: var(--box-shadow); /* Apply box shadow for better visibility */
+   
 }
-
+.icon-box-first {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.icon-box-last {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+/* Icons inside the Box */
+.icon-box img {
+    width: 20px; /* Adjust icon size */
+    height: 20px;
+}
+/* Divider Line */
+.divider {
+    width: 1px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    margin: 0 12px;
+}
 /* Profile Image */
 .navbar .profile-img {
-    width: 36px !important;
-    height: 36px !important;
+    width: 32px !important;
+    height: 32px !important;
     border-radius: 50% !important;
 }
-
-/* User Info */
-.navbar .user-name {
-    font-size: 14px !important;
-    font-weight: 600 !important;
-}
-
-.navbar .user-role {
-    font-size: 12px !important;
-    color: gray !important;
-}
-
 /* Dropdown Icon */
 .navbar .dropdown-icon {
-    font-size: 16px !important;
+    color: var(--primary-color);
     cursor: pointer;
 }
-
 /* navbar css ends*/
 
-h5 {
+
+/* footer starts */
+.footer {
+    background-color: #E7EAEC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.icon-box-footer {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.footer-text p {
+    margin: 0;
+}
+.footer-links {
+    display: flex;
+    gap: 6px;
+}
+.footer-link {
+    color: var(--primary-color);
+}
+.footer-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+/* footer ends */
+
+.heads {
     font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 700px;
 }
 
 .ParagraphsBody {
     font-weight: 400;
-    font-size: 16px;
-    opacity: 85%;
+    font-size: 12px;
+    opacity: 65%;
 }
