@@ -130,3 +130,25 @@ body {
     font-size: 12px;
     opacity: 65%;
 }
+
+/* css for main contents starts*/
+.UI-lable{
+    background-color: #E7EAEC;
+    padding: 2px 12px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin: 0 !important;
+}
+.id-link{
+    color: var(--button-primary) !important;
+}
+.ad-img{
+    /* height: 64px; */
+    width: 64px;
+}
+.custom-card {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--secondary-color);
+    background: var(--background-color);
+    box-shadow: var(--box-shadow);
+}
