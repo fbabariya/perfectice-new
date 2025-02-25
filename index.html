@@ -21,7 +21,7 @@
 <body>
 <!-- Main Page Wrapper -->
 
-<div id="page-wrapper" class="page-wrapper">
+<div id="" class="">
 
     <!-- Page Header Area-->
     <header id="header" class="header">
@@ -30,11 +30,11 @@
     </header>
 
     <!-- Page Content Area -->
-    <main id="container mt-5">
-        <div class="row m-3">
+    <main class="container-fluid">
+        <div class="row">
             <!-- Profile & Pending Requests -->
-            <div class="col-lg-4">
-                <div class="custom-card mb-3">
+            <div class="col-lg-4 main-left">
+                <div class="custom-card mb-3 card-profile">
                     <div class="d-flex justify-content-end">
                         <span class="UI-lable">UI/UX Designer</span>
                     </div>
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="custom-card mb-4">
+                <div class="custom-card mb-2 card-pending">
                     <div class="d-flex align-items-center">
                         <div class="p-2">
                             <h5 class="heads">Pending Requests</h5>
@@ -62,8 +62,8 @@
             </div> <!-- End of col-lg-4 -->
     
             <!-- My Students Section -->
-            <div class="col-lg-8">    
-                <div class="custom-card">
+            <div class="col-lg-8 main-right">    
+                <div class="custom-card card-student">
                     <div class="d-flex align-items-center">
                         <div class="p-2">
                             <h5 class="heads">My Students</h5>
@@ -79,6 +79,49 @@
                 </div>
             </div> <!-- End of col-lg-8 -->
         </div> <!-- End of row -->
+
+        <!--  add students model -->
+        <div class="modal fade" id="studentModal" tabindex="-1" aria-labelledby="studentModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  
+                </div>
+                <div class="modal-body">
+                    <div class="icon">
+                        <img src="student/assets/images/icons/add-student.svg" width="30" alt="User Icon">
+                      </div>
+                  <h5 class="" id="studentModalLabel">Add Student</h5>
+                  <p class="ParagraphsBody">Add a new student by entering his/her email address or phone number</p>
+                  
+                  <div class="d-flex justify-content-center">
+                    <div class="form-check me-3">
+                      <input class="form-check-input" type="radio" name="contactOption" id="emailOption" checked>
+                      <label class="form-check-label" for="emailOption">Email</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="contactOption" id="mobileOption">
+                      <label class="form-check-label" for="mobileOption">Mobile Number</label>
+                    </div>
+                  </div>
+                  <div class="email-input">
+                  <input type="text" class="form-control mt-3" placeholder="Enter email address">
+                  </div>
+                  <div class="mobile-input d-flex flex-row">
+                    <input type="text" class="form-control mt-3" placeholder="Enter country code">
+                    <input type="text" class="form-control mt-3" placeholder="Enter mobile number">
+                </div>
+                
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-save">Save Student</button>
+                  <button type="button" class="btn btn-save-add">Save & Add Student</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </main>
     
 
